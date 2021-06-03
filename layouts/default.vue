@@ -1,6 +1,8 @@
 <template>
-  <div>
+  <div class="container mx-auto max-w-screen-md">
+    <Header />
     <Nuxt />
+    <Footer />
   </div>
 </template>
 
