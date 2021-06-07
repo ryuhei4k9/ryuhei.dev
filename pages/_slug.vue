@@ -26,13 +26,7 @@
 import Vue from 'vue'
 import { Context } from '@nuxt/types'
 
-import Header from '~/components/Header.vue'
-
 export default Vue.extend({
-  components: {
-    Header,
-  },
-
   async asyncData({ $content, params }: Context) {
     const article = await $content(params.slug).fetch()
     return { article }
